@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Media Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black md:bg-yellow-500 lg:bg-blue-500 xl:bg-green-500 2xl:bg-red-500  ">
+  <h1 id="window-width" class="text-3xl text-white font-bold ">
+    Hello world!
+  </h1>
+
+  <script>
+    function showBrowserWidth() {
+        document.getElementById("window-width").innerHTML = `Width: ${window.innerWidth} px`
+    }
+
+    window.onload = showBrowserWidth
+    window.onresize = showBrowserWidth
+  </script>
+</body>  
+</html>
